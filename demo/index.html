@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AL-HAMD Interior Design — All Interior & Decor Solution</title>
+<meta name="description" content="AL-HAMD Interior Design - Luxury interior, furniture, kitchen, TV walls in Bangladesh. Call 01718-856345">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Hind+Siliguri:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--navy:#0e1b2e;--gold:#c9a24b;--gold2:#e8c97a;--cream:#f7f2e8;--ink:#1c2330;--mut:#64748b}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter','Hind Siliguri',sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',serif;line-height:1.2}
+img{max-width:100%;display:block}
+.container{width:min(1200px,92%);margin:0 auto}
+.topbar{background:var(--navy);color:#dbe3ef;font-size:13px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:var(--gold2);text-decoration:none;font-weight:700}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);border-bottom:1px solid #eee}
+.nav-in{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+.brand img{width:52px;height:52px;object-fit:cover;border-radius:12px;border:2px solid var(--gold)}
+.brand b{font-family:'Playfair Display',serif;font-size:19px;display:block;line-height:1.1}
+.brand small{font-size:12px;color:var(--mut)}
+.links{display:flex;gap:22px;align-items:center}
+.links a{color:#334155;text-decoration:none;font-weight:600;font-size:14.5px}
+.btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--gold),#a37f2c);color:#fff!important;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;border:0;cursor:pointer;box-shadow:0 10px 25px rgba(201,162,75,.35)}
+.btn.ghost{background:#fff;color:var(--navy)!important;border:1.5px solid #e5d9bd;box-shadow:none}
+.btn.dark{background:var(--navy)}
+.hamb{display:none;background:none;border:0;font-size:24px;color:var(--navy)}
+.hero{background:linear-gradient(rgba(8,15,28,.74),rgba(8,15,28,.55)),url('assets/living-luxury.jpg') center/cover;color:#fff;padding:80px 0 66px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(201,162,75,.18);border:1px solid rgba(232,201,122,.5);color:var(--gold2);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.6px;text-transform:uppercase}
+.hero h1{font-size:clamp(34px,5vw,58px);margin:16px 0 10px;color:#fff}
+.hero h1 span{color:var(--gold2);font-style:italic}
+.bn{font-family:'Hind Siliguri';color:var(--gold2);font-size:20px;margin-top:8px}
+.hero p.sub{color:#e2e8f0;font-size:17px;max-width:560px}
+.hero-cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.trust{display:flex;gap:18px;margin-top:24px;flex-wrap:wrap;color:#e2e8f0;font-size:14px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:12px;border:1.5px solid #e6e1d3;border-radius:12px;font-size:14px;font-family:inherit;background:#fffdf7}
+.form-grid textarea{grid-column:1/-1;min-height:80px}
+.hero-card .btn{width:100%;justify-content:center;margin-top:12px}
+.micro{font-size:12.5px;color:#64748b;text-align:center;margin-top:8px}
+.stats{background:var(--navy);color:#fff}
+.stats .container{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:24px 0;text-align:center}
+.stats b{font-family:'Playfair Display';font-size:30px;color:var(--gold2);display:block}
+.stats span{font-size:12px;color:#cbd5e1;text-transform:uppercase;letter-spacing:.5px}
+section{padding:70px 0}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 34px}
+.sec-head h2{font-size:clamp(28px,3.6vw,42px);color:var(--navy);margin:8px 0 10px}
+.kicker{color:#a37f2c;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:12.5px}
+.sec-head p{color:var(--mut)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc{background:#fff;border:1px solid #eee5cd;border-radius:18px;overflow:hidden}
+.svc img{height:205px;width:100%;object-fit:cover}
+.svc .pad{padding:20px}
+.svc h3{margin:10px 0 6px;color:var(--navy);font-size:20px}
+.svc p{font-size:14.5px;color:var(--mut)}
+.svc .icon{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--navy);color:var(--gold2);font-size:19px;margin-top:-44px;position:relative;border:3px solid #fff}
+.strip{background:linear-gradient(135deg,#0e1b2e,#1e3a5c);color:#fff;border-radius:22px;padding:32px;display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:center;margin-top:22px}
+.strip h3{font-size:24px}
+.strip p{color:#cbd5e1;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gitem{border-radius:18px;overflow:hidden;position:relative;height:290px;cursor:zoom-in}
+.gitem img{width:100%;height:100%;object-fit:cover}
+.gitem .cap{position:absolute;inset:auto 0 0 0;padding:32px 16px 14px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;font-size:14px}
+.gitem .cap b{display:block;font-family:'Playfair Display';font-size:17px}
+.chip{padding:9px 18px;border-radius:999px;border:1.5px solid #e6d9b8;background:#fff;cursor:pointer;font-weight:700;font-size:14px}
+.chip.active{background:var(--navy);color:var(--gold2);border-color:var(--navy)}
+.gallery-filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+.why{background:var(--cream)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.why img.main{border-radius:22px;height:500px;width:100%;object-fit:cover}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+.feat div{background:#fff;border:1px solid #eee0bd;border-radius:16px;padding:16px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.step{background:#fff;border:1px solid #eee;border-radius:18px;padding:22px;text-align:center}
+.step .n{width:44px;height:44px;border-radius:50%;background:var(--navy);color:var(--gold2);display:grid;place-items:center;font-weight:800;margin:0 auto 12px;font-family:'Playfair Display'}
+.testis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tcard{background:#fff;border:1px solid #ece3c8;border-radius:18px;padding:22px}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.price{background:#fff;border:1.5px solid #eadfc0;border-radius:20px;padding:28px;text-align:center}
+.price.pop{background:var(--navy);color:#e2e8f0;transform:scale(1.03)}
+.price ul{list-style:none;text-align:left;margin:16px 0;font-size:14.5px;display:grid;gap:9px}
+.contact{background:var(--navy);color:#dbe3ef}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cbox{background:#fff;color:var(--ink);border-radius:20px;padding:28px}
+footer{background:#0a1424;color:#94a3b8;padding:26px 0;font-size:13.5px}
+.float-wa{position:fixed;right:18px;bottom:86px;z-index:60;width:58px;height:58px;border-radius:50%;background:#22c55e;display:grid;place-items:center;color:#fff;font-size:28px;text-decoration:none}
+.mobile-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;grid-template-columns:1fr 1fr;padding:10px;gap:10px;border-top:1px solid #eee}
+.mobile-bar a{text-align:center;padding:12px;border-radius:12px;font-weight:800;text-decoration:none}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:100;padding:20px}
+.lightbox.open{display:grid}
+.lightbox img{max-height:86vh;max-width:92vw;border-radius:14px}
+@media(max-width:920px){.links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;flex-direction:column;padding:18px}.links.open{display:flex}.hamb{display:block}.hero-grid,.why-grid,.contact-grid,.strip{grid-template-columns:1fr}.services,.grid,.testis,.pricing{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.stats .container{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.services,.grid,.testis,.pricing,.feat,.steps{grid-template-columns:1fr}body{padding-bottom:68px}.mobile-bar{display:grid}.why img.main{height:320px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><div>Serving All Bangladesh — Dhaka • Chattogram • Sylhet</div><div><a href="tel:01718856345">01718-856345</a> &nbsp; <a href="tel:01842214199">01842-214199</a></div></div></div>
+<header class="nav"><div class="container nav-in"><a class="brand" href="#home"><img src="assets/logo-gold.jpg" alt="logo"><span><b>AL-HAMD</b><small>INTERIOR DESIGN • আল-হামদ</small></span></a><nav class="links" id="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#why">Why Us</a><a href="#pricing">Packages</a><a href="#contact">Contact</a><a class="btn" href="https://wa.me/8801718856345" target="_blank">Free Quote</a></nav><button class="hamb" onclick="document.getElementById('links').classList.toggle('open')">☰</button></div></header>
+<section class="hero" id="home"><div class="container hero-grid"><div><span class="eyebrow">Premium Interior • Since 2014</span><h1>Luxury Interiors That <span>Increase Your Property Value</span></h1><div class="bn">আল-হামদ ইন্টেরিয়র ডিজাইন — All Interior & Decor Solution</div><p class="sub">From stunning living rooms, modern kitchens & LED TV walls to full home, office & showroom transformation. Factory-direct furniture, expert fitting, on-time handover.</p><div class="hero-cta"><a class="btn" href="https://wa.me/8801718856345?text=Assalamualaikum!%20I%20want%20interior%20design." target="_blank">WhatsApp Us Now</a><a class="btn ghost" href="#work">View Our Work</a></div><div class="trust"><div>⭐ 4.9/5 client rating</div><div><b>500+</b> projects done</div><div><b>5-year</b> service warranty</div></div></div><div class="hero-card"><h3>Get Free Site Visit + Quote</h3><p style="font-size:14px;color:var(--mut)">We call back within 30 minutes (9am–10pm)</p><form onsubmit="return sendLead(event)"><div class="form-grid"><input id="n" required placeholder="Your name*"><input id="p" required placeholder="Phone / WhatsApp*"><select id="s"><option>Full Home Interior</option><option>Living Room + TV Wall</option><option>Kitchen Cabinet</option><option>Bedroom Package</option><option>Office / Shop</option></select><select id="b"><option>Budget: 1-3 Lakh</option><option>Budget: 3-6 Lakh</option><option>Budget: 6-12 Lakh</option><option>Budget: 12 Lakh+</option></select><textarea id="m" placeholder="Flat/shop size... e.g. 1200 sft, Mirpur Dhaka"></textarea></div><button class="btn">Request Callback</button><div class="micro">Or direct call: <b>01718-856345</b> — Arafat Hossain (Sagor)</div></form></div></div></section>
+<div class="stats"><div class="container"><div><b>500+</b><span>Projects Done</span></div><div><b>10+</b><span>Years Experience</span></div><div><b>320+</b><span>Happy Families</span></div><div><b>5 Yr</b><span>Service Warranty</span></div></div></div>
+<!--PART4-->
+<section id="services"><div class="container"><div class="sec-head"><div class="kicker">What we do</div><h2>Complete Interior & Furniture Solution</h2><p>One team for design, manufacturing & installation — no middleman.</p></div><div class="services"><div class="svc"><img src="assets/living-luxury.jpg" alt="Luxury living room interior designed by AL-HAMD Interior Design" loading="lazy"><div class="pad"><div class="icon">🛋️</div><h3>Luxury Living & Ceiling</h3><p>Gypsum ceiling, cove lighting, wall panels & full living setup.</p></div></div><div class="svc"><img src="assets/tv-marble.jpg" alt="Marble TV wall false ceiling design" loading="lazy"><div class="pad"><div class="icon">📺</div><h3>Modern TV Wall</h3><p>Marble / laminate / louvers with warm LED lighting.</p></div></div><div class="svc"><img src="assets/kitchen-lux.jpg" alt="Luxury modular kitchen with wooden cabinets" loading="lazy"><div class="pad"><div class="icon">🍳</div><h3>Modular Kitchen</h3><p>Waterproof ply, soft-close hinges, quartz top & chimney.</p></div></div><div class="svc"><img src="assets/kitchen-green.jpg" alt="Modern green modular kitchen interior" loading="lazy"><div class="pad"><div class="icon">🪑</div><h3>Home Furniture</h3><p>Bed, almirah, dressing, sofa, dining — factory-made set.</p></div></div><div class="svc"><img src="assets/kids-pink.jpg" alt="Kids room interior design for baby bedroom" loading="lazy"><div class="pad"><div class="icon">🛏️</div><h3>Bedroom & Kids Room</h3><p>Wardrobe walls, study units & cute theme rooms.</p></div></div><div class="svc"><img src="assets/tv-dark.jpg" alt="Dark wood TV unit with wall panel design" loading="lazy"><div class="pad"><div class="icon">💼</div><h3>Office, Shop & Doors</h3><p>Workstations, counters, racks & all kinds of doors.</p></div></div></div><div class="strip"><div><h3>This Month: Free 3D Design + 10% Off Full Home</h3><p>Limited slots for Dhaka. Book free site visit now. EMI available.</p></div><div style="text-align:right"><a class="btn" href="https://wa.me/8801718856345?text=I%20want%20the%2010%25%20offer!" target="_blank">Claim Offer →</a></div></div></div></section>
+<!--PART5-->
+<section id="work" style="padding-top:10px"><div class="container"><div class="sec-head"><div class="kicker">Portfolio</div><h2>Recent Work by AL-HAMD</h2><p>Tap any photo to view fullscreen.</p></div><div class="gallery-filters"><button class="chip active" onclick="filterG('all',this)">All Work</button><button class="chip" onclick="filterG('living',this)">Living</button><button class="chip" onclick="filterG('tv',this)">TV Walls</button><button class="chip" onclick="filterG('kitchen',this)">Kitchen</button><button class="chip" onclick="filterG('bed',this)">Bedroom</button></div><div class="grid" id="gal"><div class="gitem living" onclick="openLB(this)"><img src="assets/living-luxury.jpg" alt="Luxury living room interior designed by AL-HAMD Interior Design" loading="lazy"><div class="cap"><b>Royal Living Room</b>Mirpur DOHS, Dhaka</div></div><div class="gitem tv" onclick="openLB(this)"><img src="assets/tv-marble.jpg" alt="Marble TV wall false ceiling design" loading="lazy"><div class="cap"><b>Marble + Gold TV Wall</b>Uttara Project</div></div><div class="gitem kitchen" onclick="openLB(this)"><img src="assets/kitchen-lux.jpg" alt="Luxury modular kitchen with wooden cabinets" loading="lazy"><div class="cap"><b>Open Kitchen + Dining</b>Bashundhara R/A</div></div><div class="gitem tv" onclick="openLB(this)"><img src="assets/tv-dark.jpg" alt="Dark wood TV unit with wall panel design" loading="lazy"><div class="cap"><b>Dark Premium Lounge</b>Dhanmondi Flat</div></div><div class="gitem living" onclick="openLB(this)"><img src="assets/living-beige.jpg" alt="Beige living room interior with modern sofa" loading="lazy"><div class="cap"><b>Beige Luxury Lounge</b>Banani Residence</div></div><div class="gitem tv" onclick="openLB(this)"><img src="assets/tv-white.jpg" alt="White TV wall false ceiling design" loading="lazy"><div class="cap"><b>Compact TV Unit</b>1200 sft Flat</div></div><div class="gitem kitchen" onclick="openLB(this)"><img src="assets/kitchen-green.jpg" alt="Modern green modular kitchen interior" loading="lazy"><div class="cap"><b>Family Kitchen</b>Green Theme</div></div><div class="gitem bed" onclick="openLB(this)"><img src="assets/kids-pink.jpg" alt="Kids room interior design for baby bedroom" loading="lazy"><div class="cap"><b>Kids Princess Room</b>Pink Theme</div></div><div class="gitem tv" onclick="openLB(this)"><img src="assets/tv-simple.jpg" alt="Simple and elegant TV wall design" loading="lazy"><div class="cap"><b>Budget TV Console</b>Rental-friendly</div></div></div></div></section>
+<section id="why" class="why"><div class="container why-grid"><div><img class="main" src="assets/tv-simple.jpg" alt="Modern TV wall false ceiling design by AL-HAMD Interior" loading="lazy"><div style="display:flex;gap:10px;margin-top:12px"><img src="assets/banner-sofa.jpg" style="width:50%;border-radius:14px;height:150px;object-fit:cover" alt="Modern sofa set for living room" loading="lazy"><img src="assets/eid-book.jpg" style="width:50%;border-radius:14px;height:150px;object-fit:cover" alt="Custom shelf and book cabinet design" loading="lazy"></div></div><div><div class="kicker">WHY AL-HAMD</div><h2 style="font-size:clamp(28px,3.5vw,40px);color:var(--navy)">Direct Factory Rate. Trusted Owner.</h2><p style="color:var(--mut)">Proprietor <b style="color:var(--navy)">Md. Arafat Hossain (Sagor)</b> supervises every site personally. Own workshop = showroom quality at factory price.</p><div class="feat"><div><b>🏭 Own Factory</b><p style="font-size:13.5px;color:var(--mut)">25-30% cheaper, no middleman.</p></div><div><b>🎨 Free 3D Design</b><p style="font-size:13.5px;color:var(--mut)">See home in 3D before work.</p></div><div><b>📝 Written Agreement</b><p style="font-size:13.5px;color:var(--mut)">Fixed price & date on paper.</p></div><div><b>🔧 5-Year Service</b><p style="font-size:13.5px;color:var(--mut)">One call, we arrive.</p></div></div><div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap"><a class="btn dark" href="tel:01718856345">Call 01718-856345</a><a class="btn ghost" href="#pricing">See Packages</a></div></div></div></section>
+<!--PART6-->
+<section><div class="container"><div class="sec-head"><div class="kicker">Simple process</div><h2>From Call to Handover in 4 Steps</h2></div><div class="steps"><div class="step"><div class="n">1</div><h4>Call / WhatsApp</h4><p style="font-size:13.5px;color:var(--mut)">Share flat plan or video.</p></div><div class="step"><div class="n">2</div><h4>Free Site Visit</h4><p style="font-size:13.5px;color:var(--mut)">Measurement + samples.</p></div><div class="step"><div class="n">3</div><h4>3D + Quote</h4><p style="font-size:13.5px;color:var(--mut)">Approve design, lock price.</p></div><div class="step"><div class="n">4</div><h4>Handover</h4><p style="font-size:13.5px;color:var(--mut)">15-30 days work.</p></div></div>
+<div class="sec-head" style="margin-top:44px"><div class="kicker">Reviews</div><h2>What Clients Say</h2></div><div class="testis"><div class="tcard"><div style="color:var(--gold)">★★★★★</div><p style="margin:10px 0">"Sagor bhai made my 1400 sft flat in Uttara. TV wall and kitchen everyone asks about!"</p><b>Rahman Family</b><br><small>Uttara • Full Home</small></div><div class="tcard"><div style="color:var(--gold)">★★★★★</div><p style="margin:10px 0">"Best price for kitchen cabinet. Waterproof ply, done in 18 days exactly."</p><b>Dr. Nusrat J.</b><br><small>Dhanmondi • Kitchen</small></div><div class="tcard"><div style="color:var(--gold)">★★★★★</div><p style="margin:10px 0">"Office done for my chamber. Written deal, no hidden cost. Recommended."</p><b>Engr. Kamal H.</b><br><small>Mirpur • Office</small></div></div></div></section>
+<!--PART7-->
+<section id="pricing" style="background:var(--cream)"><div class="container"><div class="sec-head"><div class="kicker">Pricing</div><h2>Package Price Idea</h2><p>Final price after free visit. No hidden cost.</p></div><div class="pricing"><div class="price"><h3>Single Room</h3><div style="font-family:'Playfair Display';font-size:32px;color:var(--gold)">৳85k+</div><ul><li>✔ 1 Bed / TV / Kitchen</li><li>✔ Branded board</li><li>✔ 7-10 days</li><li>✔ 1-year service</li></ul><br><a class="btn ghost" href="https://wa.me/8801718856345" target="_blank">Ask Details</a></div><div class="price pop"><div style="background:var(--gold);color:#fff;font-size:12px;font-weight:800;padding:5px 14px;border-radius:999px;display:inline-block">MOST POPULAR</div><h3 style="color:var(--gold2);margin-top:8px">Full Flat 2BHK</h3><div style="font-family:'Playfair Display';font-size:32px">৳3.5-5.5L</div><ul><li>✔ Kitchen + TV + 2 Bed</li><li>✔ Ceiling + lighting</li><li>✔ Free 3D + visit</li><li>✔ 5-year service</li></ul><br><a class="btn" href="https://wa.me/8801718856345" target="_blank">Get Quote</a></div><div class="price"><h3>Villa / Office</h3><div style="font-family:'Playfair Display';font-size:32px;color:var(--gold)">Custom</div><ul><li>✔ Duplex, showroom</li><li>✔ Imported materials</li><li>✔ Site engineer</li><li>✔ EMI available</li></ul><br><a class="btn ghost" href="https://wa.me/8801718856345" target="_blank">Book Visit</a></div></div></div></section>
+<!--PART8-->
+<section id="contact" class="contact"><div class="container contact-grid"><div><div class="kicker" style="color:var(--gold2)">CONTACT TODAY</div><h2 style="color:#fff;font-size:32px">Call Now for Free Visit</h2><div class="bn">আল-হামদ ইন্টেরিয়র ডিজাইন</div><p>Interior • Furniture • Kitchen • Office & Doors.</p><div style="background:rgba(255,255,255,.07);padding:15px;border-radius:14px;margin-top:12px">Proprietor: <b style="color:#fff">Md. Arafat Hossain (Sagor)</b></div><div style="background:rgba(255,255,255,.07);padding:15px;border-radius:14px;margin-top:10px"><a href="tel:01718856345" style="color:var(--gold2);font-weight:800;font-size:19px;text-decoration:none">01718-856345</a> <a href="tel:01842214199" style="color:var(--gold2);font-weight:800;text-decoration:none">01842-214199</a><br>9am-10pm, home visit all over BD</div></div><div class="cbox"><h3 style="color:var(--navy)">Free Quote in 30 Seconds</h3><form onsubmit="return sendLead2(event)" style="margin-top:12px;display:grid;gap:10px"><input id="n2" required placeholder="Name*" style="padding:13px;border:1.5px solid #ddd;border-radius:12px"><input id="p2" required placeholder="Mobile*" style="padding:13px;border:1.5px solid #ddd;border-radius:12px"><input id="a2" placeholder="Area" style="padding:13px;border:1.5px solid #ddd;border-radius:12px"><textarea id="m2" placeholder="What do you need?" style="padding:13px;border:1.5px solid #ddd;border-radius:12px;min-height:88px"></textarea><button class="btn" style="justify-content:center">Send on WhatsApp</button></form></div></div></section>
+<footer><div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><div>© 2026 <b style="color:#e2e8f0">AL-HAMD Interior</b> • Demo</div><div>01718-856345 • 01842-214199</div></div></footer>
+<a class="float-wa" href="https://wa.me/8801718856345" target="_blank">✆</a><div class="mobile-bar"><a href="tel:01718856345" style="background:var(--navy);color:#fff">Call Now</a><a href="https://wa.me/8801718856345" style="background:#22c55e;color:#fff" target="_blank">WhatsApp</a></div>
+<div class="lightbox" id="lb" onclick="this.classList.remove('open')"><img id="lbimg" src=""></div>
+<script>
+function sendLead(e){e.preventDefault();var n=document.getElementById('n').value,p=document.getElementById('p').value;window.open('https://wa.me/8801718856345?text='+encodeURIComponent('Assalamualaikum! I am '+n+' ('+p+')'),'_blank');return false;}
+function sendLead2(e){e.preventDefault();var n=document.getElementById('n2').value,p=document.getElementById('p2').value;window.open('https://wa.me/8801718856345?text='+encodeURIComponent('Assalamualaikum! I am '+n+' ('+p+')'),'_blank');return false;}
+function filterG(c,b){document.querySelectorAll('.chip').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('#gal .gitem').forEach(g=>{g.style.display=(c==='all'||g.classList.contains(c))?'':'none';});}
+function openLB(el){document.getElementById('lbimg').src=el.querySelector('img').src;document.getElementById('lb').classList.add('open');}
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# Original source images you sent — NOT part of the website.
+/*.jpg
+
+# Business/research documents — not part of the website
+/*.pdf
+/*.docx
+
+# Node / OS noise
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
